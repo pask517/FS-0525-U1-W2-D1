@@ -152,10 +152,19 @@ let finalResult2 = 13 <= 13 && 10 > 5 // true && true = true
 let finalResult3 = 10 === 10 && 34 < 5 //true && false > false
 
 //SPECCHIETTO OR ||
+// true || true -> true
+// false || true -> true
+// true || false -> true
+// false || false -> false
+
 // l'OR comanda quelle situazioni in cui su diverse condizioni basta che UNA sia
 // vera per provocare un risultato di true
 let vadoABallare
 // vado a ballare se mia mamma mi ha lasciato l'auto o se Gianpietro mi passa a prendere
 let macchinaDellaMamma = false
 let gianMiPassaAPrendere = true
+
 vadoABallare = macchinaDellaMamma || gianMiPassaAPrendere
+
+let finalResult4 = 15 > 15 || true //false || true -> true
+let finalResult5 = 16 % 2 === 0 || 12 < 10 //true || false -> true
